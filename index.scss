@@ -1,0 +1,25 @@
+html, body {
+  height: 100%;
+}
+body{
+  margin: 0;
+}
+.index-page {
+  .container, .swiper-container{
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .swiper-button-next{
+    display: none
+  }
+  .button-next{
+    display: block;
+    position: absolute;
+    right: 50%;
+    top: unset;
+    bottom: 10%;
+    transform: rotate(90deg);
+  }
+}
