@@ -54,6 +54,26 @@ body{
     &:nth-child(7) {
       background-color: #550016;
     }
+    &:last-of-type{
+      #amap{
+        width: 80%;
+        display:block;
+        margin: 0 auto;
+        height: 80%;
+      }
+      > .wrap{
+        width: 100%;
+        height: 100%;
+      }
+      .wrap > a {
+        text-decoration: none;
+        box-shadow: 5px 5px blue;
+        &:hover{
+          background:yellow;
+          box-shadow: 5px 5px red;
+        }
+      }
+    }
   }
   .button-next{
     display: block;
