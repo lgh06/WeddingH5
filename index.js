@@ -31,3 +31,7 @@ var mySwiper = new Swiper('.swiper-container', {
   // threshold: 20,
   loop: false,
 });
+
+document.addEventListener('touchstart', function(){
+  document.querySelector('audio').play();
+}, false);
