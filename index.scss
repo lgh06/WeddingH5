@@ -1,3 +1,15 @@
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-60%) rotate(90deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(90deg);
+  }
+}
+
 html, body {
   height: 100%;
 }
@@ -46,9 +58,16 @@ body{
   .button-next{
     display: block;
     position: absolute;
-    right: 50%;
+    right: 48%;
     top: unset;
     bottom: 0;
     transform: rotate(90deg);
+    animation: fadeInDown 1s infinite;
+    animation-fill-mode: both;
+    &.swiper-button-disabled{
+      animation: none;
+      filter: grayscale(.9)
+      opacity(.5)
+    }
   }
 }
