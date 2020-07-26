@@ -16,7 +16,14 @@ var mySwiper = new Swiper('.swiper-container', {
   },
 
   // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
+  autoplay: {
+    delay: 3000,
   },
+  // Disable preloading of all images
+  preloadImages: false,
+  // Enable lazy loading
+  lazy: true,
 })
