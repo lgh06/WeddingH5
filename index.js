@@ -1,4 +1,4 @@
-import anime from 'animejs/lib/anime.es.js';
+// import anime from 'animejs/lib/anime.es.js';
 
 var mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
