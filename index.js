@@ -18,7 +18,7 @@ var mySwiper = new Swiper('.swiper-container', {
   //   el: '.swiper-scrollbar',
   // },
   autoplay: {
-    delay: 3000,
+    delay: 5000,
     stopOnLastSlide: true,
   },
   // // Disable preloading of all images
