@@ -22,19 +22,19 @@ var mySwiper = new Swiper('.swiper-container', {
     stopOnLastSlide: true,
   },
   // // Disable preloading of all images
-  // preloadImages: false,
+  preloadImages: true,
   // // Enable lazy loading
-  // lazy: true,
+  lazy: true,
   mousewheel: true,
   keyboard: true,
   // effect: 'cube',
-  simulateTouch: false,
-  threshold: 20,
+  // simulateTouch: false,
+  // threshold: 20,
   loop: false,
 })
 
 mySwiper.on('reachEnd', function() {
-  initMap()
+  // initMap()
 })
 
  function initMap() {
@@ -75,9 +75,9 @@ mySwiper.on('reachEnd', function() {
 
 		function mapFeatureClick(e){
 			if(!infoWindow){ infoWindow = new AMap.InfoWindow({autoMove: true}); }
-			// var extData = e.target.getExtData();
+			var extData = e.target.getExtData();
       infoWindow.setContent("<h5>" + "天美大酒店" + "</h5><div>" + "原阳县南干道工会对面" + "</div>");
-      // console.log(e, e.lnglat)
+      console.log(e, e.lnglat)
 			infoWindow.open(map, features[0].lnglat);
 		}
 
@@ -90,7 +90,6 @@ mySwiper.on('reachEnd', function() {
 				map.addControl(new AMap.ToolBar);
 			map.addControl(new AMap.OverView);
 			map.addControl(new AMap.Scale);
-      mapFeatureClick()
 			});	
 		})
 	}();
